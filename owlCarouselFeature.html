@@ -1,0 +1,55 @@
+<!DOCTYPE html><!---->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Making page responsive-->
+    <title>Owl Carousel Feature Page</title>
+    <script src="https://kit.fontawesome.com/e7db147a51.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="D:\Projects\Features\css\owl.carousel.min.css" />
+    
+
+    
+</head>
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="D:\Projects\Features\images\image1.jpg" alt="Oops Image1 can't be found"></div>
+        <div class="item"><img src="D:\Projects\Features\images\image2.jpg"alt="Oops Image2 can't be found"></div>
+        <div class="item"><img src="D:\Projects\Features\images\image3.jpg"alt="Oops Image3 can't be found"></div>
+        <div class="item"><img src="D:\Projects\Features\images\image4.jpg"alt="Oops Image4 can't be found"></div>
+        <div class="item"><img src="D:\Projects\Features\images\image5.jpg"alt=" I'm going to do this and get it"></div>
+        <div class="item"><img src="D:\Projects\Features\images\image6.jpg"alt="Try again Babygirl"></div>
+    </div>
+</body>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="index.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="D:\Projects\Features\js\owl.carousel.min.js" ></script>
+<script>
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+loop:true,
+margin:10,
+nav:true,
+responsive:{
+    0:{
+        items:1
+    },
+    600:{
+        items:3
+    },
+    1000:{
+        items:5
+    }
+}
+})
+});
+function setOwlDotsPosition() {
+  const $target = $(".owl-item.active .owl-slide-text");
+  doDotsCalculations($target);
+}
+</script>
+</html>
+
+
